@@ -2,10 +2,12 @@
     <div class="container-fluid" id="hederi">
         <div class="navbar-header" id="baneri">
             <%= link_to "Company Name" , root_path, id:"titulli" %></a>
+            <span style="font-size:30px;cursor:pointer;padding-left:85px;" id="nav_span" onclick="doSomething()">☰</span>
         </div>
-        <div >
+        
+        <div id="menu">
+            
             <ul class="nav navbar-nav" id="navi">
-                <li id="nav_span"><span style="font-size:30px;cursor:pointer;" onclick="openNav()">☰</span></li>
                 <li id="nav"><a href="#home">Home</a></li>
                 <li id="nav"><a href="#about">About</a></li>
                 <li id="nav"><a href="#staff">Staff</a></li>
@@ -15,7 +17,6 @@
             </ul>
         </div>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#home">Home</a></li>
             <a href="#about">About</a></li>
             <a href="#staff">Staff</a></li>

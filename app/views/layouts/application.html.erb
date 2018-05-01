@@ -27,7 +27,25 @@
       function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
       }
+      var clicked = true;
+  
+      function doSomething()
+     {
+        if(clicked)
+       {
+         openNav(); 
+  
+       }
+      else
+      {
+         closeNav(); 
+  
+      }
+     clicked = !clicked;
+    }
+      
     </script>
+    
   <!--  <script>-->
   <!--    $(document).ready(function(){-->
   <!--    	$('a[href^="#"]').on('click',function (e) {-->

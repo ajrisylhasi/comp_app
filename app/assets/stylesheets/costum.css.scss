@@ -125,20 +125,18 @@ p {
     #titulli {
         font-size:25px;
     }
-    #navi a{
-        display:none;
-        padding:-15px;
-        margin:0px;
-        font-size:1px;
-    }
+
     #nav_span{
-        display: block !important;
-        padding-top: -20px;
+        display: inline !important;
+    }
+    #navi {
+        display: none;
+        
     }
     .sidenav {padding-top: 15px;}
     
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
     
     #baneri {
         padding-left: 6vw;
@@ -147,16 +145,13 @@ p {
     #titulli {
         font-size:30px;
     }
-    #navi a{
-        display:none;
-        padding:-15px;
-        margin:0px;
-        font-size:1px;
-    }
     #nav_span{
         display: inline !important;
-        float: left;
     }
     .sidenav {padding-top: 15px;}
     
+    #navi {
+        display: none;
+        
+    }
 }

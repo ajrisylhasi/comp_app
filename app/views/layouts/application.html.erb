@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>CompApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,7 +11,6 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <%= csrf_meta_tags %>
   </head>
 
   <body>
@@ -28,22 +25,19 @@
           document.getElementById("mySidenav").style.width = "0";
       }
       var clicked = true;
-  
       function doSomething()
      {
         if(clicked)
        {
-         openNav(); 
-  
+          openNav(); 
+          
        }
       else
       {
          closeNav(); 
-  
       }
      clicked = !clicked;
-    }
-      
+      }
     </script>
     
   <!--  <script>-->

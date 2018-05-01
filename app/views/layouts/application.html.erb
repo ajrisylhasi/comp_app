@@ -7,9 +7,40 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <div><%= render "layouts/header" %></div>
     <%= yield %>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  <!--  <script>-->
+  <!--    $(document).ready(function(){-->
+  <!--    	$('a[href^="#"]').on('click',function (e) {-->
+  <!--    	    e.preventDefault();-->
+  <!--    	    var target = this.hash;-->
+  <!--    	    var $target = $(target);-->
+  <!--    	    $('html, body').stop().animate({-->
+  <!--    	        'scrollTop': $target.offset().top-->
+  <!--    	    }, 500, 'swing', function () {-->
+  <!--    	    });-->
+  <!--    	});-->
+  <!--    });-->
+  <!--</script> -->
+  
   </body>
 </html>

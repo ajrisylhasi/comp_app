@@ -11,8 +11,6 @@ p {
 }
 #nav a:hover {
     font-weight: bold;
-
-    
 }
 
 #navi {
@@ -77,6 +75,9 @@ p {
     float: left;
     text-decoration: none;
 }
+.on {
+    font-weight:bold;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -91,28 +92,33 @@ p {
     padding-top: 60px;
 }
 
-.sidenav a {
+.navside {
     padding: 8px 8px 8px 32px;
     margin-left: 5vw;
     text-decoration: none;
     font-family:Raleway;
     color: #c4c5c6;
     display: block;
-    transition: 0.3s
-}
-#mySidenav a{
+    transition: 0.3s;
     font-size:35px;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-    font-weight: bold;
-    
-}
 #nav_span {
     display:none;
 }
-    
+
+.navside:hover{
+    text-decoration:none;
+    color:#c4c5c6;
+}
+
+.active{
+    font-size: 50px;
+    font-weight: bold;
+    color:#f1f1f1;
+}
+
+
 
 
 @media only screen and (max-width: 950px) {

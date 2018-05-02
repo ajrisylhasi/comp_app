@@ -34,13 +34,17 @@
       	});
       });
       function openNav() {
-          document.getElementById("mySidenav").style.width = "70vw";
+          document.getElementById("mySidenav").style.width = "55vw";
           $("#mySidenav").fadeTo("fast",0.9);
+          // $("#titulli").fadeTo("fast", 0.4);
+          $("#swipe-area").fadeTo("fast", 0.3);
           clicked=true;
       }
       function closeNav() {
           document.getElementById("mySidenav").style.width = "0px";
           $("#mySidenav").fadeTo("fast",1);
+          // $("#titulli").fadeTo("fast", 1);
+          $("#swipe-area").fadeTo("fast", 1)
           clicked=false;
       }
       
@@ -84,6 +88,7 @@
       	        'scrollTop': $("#home").offset().top
       	    }, 1, 'swing', function () {
       	}); 
+      	
       });
     </script>
   </body>

@@ -83,7 +83,7 @@ p {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 110px;
     left: 0;
     
     background-color: #111;
@@ -93,14 +93,14 @@ p {
 }
 
 .navside {
-    padding: 8px 8px 8px 32px;
-    margin-left: 5vw;
+    padding: 8px 8px 8px 7vw;
+    
     text-decoration: none;
-    font-family:Raleway;
+    font-family: Montserrat;
     color: #c4c5c6;
     display: block;
     transition: 0.3s;
-    font-size:35px;
+    font-size: 6vw;
 }
 
 #nav_span {
@@ -113,7 +113,7 @@ p {
 }
 
 .active{
-    font-size: 50px;
+    font-size: 7.3vw;
     font-weight: bold;
     color:#f1f1f1;
 }

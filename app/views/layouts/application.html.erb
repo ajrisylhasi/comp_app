@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CompApp</title>
+    <title>Company App</title>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,16 +13,34 @@
     
   </head>
 
-  <body>
-    <div><%= render "layouts/header" %></div>
+  <body id="doby" data-role="page">
+    <div id="home"></div>
+    <%= render "layouts/header" %>
+    <div id="swipe-area">
     <%= yield %>
+    
+    </div>
     <script>
+      $(document).ready(function(){
+      	$('a[href^="#"]').on('click',function (e) {
+      	    e.preventDefault();
+      	    var target = this.hash;
+      	    var $target = $(target);
+      	    $('html, body').stop().animate({
+      	        'scrollTop': $target.offset().top
+      	    }, 500, 'swing', function () {
+      	    });
+      	});
+      });
       function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
+          
+          document.getElementById("mySidenav").style.width = "70vw";
+          $("#mySidenav").fadeTo("fast",0.9);
       }
-      
       function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.width = "0px";
+          $("#mySidenav").fadeTo("fast",1);
+          clicked = !clicked;
       }
       var clicked = true;
       function doSomething()
@@ -30,29 +48,16 @@
         if(clicked)
        {
           openNav(); 
-          
        }
       else
       {
          closeNav(); 
       }
-     clicked = !clicked;
+       clicked = !clicked;
+      }
+      function fade(){
+        $("#doby").not("#mySidenav").fadeTo("fast",1);
       }
     </script>
-    
-  <!--  <script>-->
-  <!--    $(document).ready(function(){-->
-  <!--    	$('a[href^="#"]').on('click',function (e) {-->
-  <!--    	    e.preventDefault();-->
-  <!--    	    var target = this.hash;-->
-  <!--    	    var $target = $(target);-->
-  <!--    	    $('html, body').stop().animate({-->
-  <!--    	        'scrollTop': $target.offset().top-->
-  <!--    	    }, 500, 'swing', function () {-->
-  <!--    	    });-->
-  <!--    	});-->
-  <!--    });-->
-  <!--</script> -->
-  
   </body>
 </html>

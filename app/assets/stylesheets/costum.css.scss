@@ -93,8 +93,10 @@ p {
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
+    margin-left: 5vw;
     text-decoration: none;
-    color: #818181;
+    font-family:Raleway;
+    color: #c4c5c6;
     display: block;
     transition: 0.3s
 }
@@ -104,15 +106,8 @@ p {
 
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
-}
-
-.closebtn {
-    position: absolute;
-    z-index:1 !important;
-    top: 0;
-    right: 25px;
-    font-size: 50px !important;
-    margin-left: 50px;
+    font-weight: bold;
+    
 }
 #nav_span {
     display:none;
@@ -185,7 +180,7 @@ p {
 @media only screen and (max-width: 390px) {
     
     #baneri {
-        padding-left: 3vw;
+        padding-left: 4vw;
         padding-top: 32px;
         
     }

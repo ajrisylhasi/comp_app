@@ -21,6 +21,7 @@
     
     </div>
     <script>
+      
       var clicked = false;
       $(document).ready(function(){
       	$('a[href^="#"]').on('click',function (e) {
@@ -33,6 +34,7 @@
       	    });
       	});
       });
+      
       function openNav() {
           document.getElementById("mySidenav").style.width = "55vw";
           $("#mySidenav").fadeTo("fast",0.9);
@@ -48,20 +50,18 @@
           clicked=false;
       }
       
-      function doSomething()
-     {
-        if(!clicked)
-       {
+      function doSomething() {
+        if(!clicked) {
           openNav(); 
-       }
-      else
-      {
+        } else {
          closeNav(); 
+        }
       }
-      }
+      
       function fade(){
         $("#mySidenav").fadeTo("fast",1);
       }
+      
       var btnContainer = document.getElementById("mySidenav");
       var btns = btnContainer.getElementsByClassName("navside");
       for (var i = 0; i < btns.length; i++) {
@@ -72,6 +72,7 @@
           
         });
       }
+      
       var btnContainer = document.getElementById("navi");
       var btns = btnContainer.getElementsByClassName("navmain");
       for (var i = 0; i < btns.length; i++) {
@@ -82,6 +83,7 @@
           
         });
       }
+      
       $( window ).bind('beforeunload', function()
       {
         $('html, body').stop().animate({
@@ -90,6 +92,7 @@
       	}); 
       	
       });
+      
     </script>
   </body>
 </html>

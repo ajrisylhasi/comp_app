@@ -55,7 +55,7 @@ p {
     -moz-box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.75);
     background-color: white;
-    height: 110px;
+    height: 95px;
 }
 .container {
     position: relative;
@@ -83,7 +83,7 @@ p {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 110px;
+    top: 95px;
     left: 0;
     
     background-color: #111;
@@ -97,7 +97,7 @@ p {
     
     text-decoration: none;
     font-family: Montserrat;
-    color: #c4c5c6;
+    color: #c4c4c4;
     display: block;
     transition: 0.3s;
     font-size: 6vw;
@@ -109,13 +109,13 @@ p {
 
 .navside:hover{
     text-decoration:none;
-    color:#c4c5c6;
+    color:#c4c4c4;
 }
 
 .active{
-    font-size: 7.3vw;
+    font-size: 7.1vw;
     font-weight: bold;
-    color:#f1f1f1;
+    color:#ffffff;
 }
 
 

@@ -129,7 +129,9 @@
         var map = new google.maps.Map(document.getElementById("mapa"), {
             zoom: 17,
             center: new google.maps.LatLng(42.385546, 20.438384),
-            mapTypeId: google.maps.MapTypeId.HYBRID
+            mapTypeId: google.maps.MapTypeId.HYBRID,
+            mapTypeControl: false,
+            streetViewControl: false
         });
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(42.385546, 20.438384),

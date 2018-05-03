@@ -8,8 +8,6 @@ h4 {
     text-align: center;
 }
 
-
-
 p {
     font-family: Raleway;
 }
@@ -134,10 +132,7 @@ p {
     height: 350px;
     text-align: center;
 }
-#mapa {
-  width: 100vw;  
-  height: 350px;
-}
+
 .navside {
     padding: 8px 8px 8px 7vw;
     
@@ -163,6 +158,10 @@ p {
     font-weight: bold;
     color:#ffffff;
 }
+#mapa {
+  width: 98.9vw;  
+  height: 350px;
+}
 
 
 
@@ -186,6 +185,11 @@ p {
         display: none;
         
     }
+    
+    #mapa {
+      width: 100vw;  
+      height: 350px;
+    }
 }
 @media only screen and (max-width: 768px) {
     
@@ -206,6 +210,11 @@ p {
         
     }
     .sidenav {padding-top: 15px;}
+    
+    #mapa {
+      width: 100vw;  
+      height: 350px;
+    }
     
 }
 @media only screen and (max-width: 572px) {
@@ -228,6 +237,11 @@ p {
     }
     .sidenav {padding-top: 15px;}
     
+    #mapa {
+      width: 100vw;  
+      height: 350px;
+    }
+    
 }
 @media only screen and (max-width: 390px) {
     
@@ -248,5 +262,10 @@ p {
     #navi {
         display: none;
         
+    }
+    
+    #mapa {
+      width: 100vw;  
+      height: 350px;
     }
 }

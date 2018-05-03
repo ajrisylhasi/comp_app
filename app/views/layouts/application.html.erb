@@ -17,11 +17,10 @@
     <div id="home"></div>
     <%= render "layouts/header" %>
     <div id="swipe-area">
-    <%= yield %>
-    
+      <%= yield %>
+      <%= render "layouts/footer" %>
     </div>
     <script>
-      
       var clicked = false;
       $(document).ready(function(){
       	$('a[href^="#"]').on('click',function (e) {
@@ -88,7 +87,7 @@
       {
         $('html, body').stop().animate({
       	        'scrollTop': $("#home").offset().top
-      	    }, 1, 'swing', function () {
+      	    }, 0, 'swing', function () {
       	}); 
       	
       });

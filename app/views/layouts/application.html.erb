@@ -8,8 +8,12 @@
     
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=routes"></script>
     
   </head>
 
@@ -18,7 +22,9 @@
     <%= render "layouts/header" %>
     <div id="swipe-area">
       <%= yield %>
+      <div style="margin-top:60px"></div>
       <%= render "layouts/footer" %>
+      <div id="end"></div>
     </div>
     <script>
       var clicked = false;
@@ -85,13 +91,28 @@
       
       $( window ).bind('beforeunload', function()
       {
-        $('html, body').stop().animate({
+         $('html, body').stop().animate({
       	        'scrollTop': $("#home").offset().top
       	    }, 0, 'swing', function () {
-      	}); 
+      	});
       	
       });
       
+      function initialize() {
+        
+
+        var map = new google.maps.Map(document.getElementById("mapa"), {
+            zoom: 17,
+            center: new google.maps.LatLng(42.385546, 20.438384),
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        });
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(42.385546, 20.438384),
+          map: map,
+          title: 'N.N.P "SYLHASI"'
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </body>
 </html>

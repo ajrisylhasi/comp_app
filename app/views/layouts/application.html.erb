@@ -43,8 +43,8 @@
 
   <body id="doby" data-role="page">
     <div id="home"></div>
-    <%= render "layouts/header" %>
-    <div id="swipe-area">
+    <div style="height:95px"><%= render "layouts/header" %></div>
+    <div class="swipe-area">
       <%= yield %>
       <div style="margin-top:60px"></div>
       <%= render "layouts/footer" %>
@@ -59,7 +59,7 @@
       	    var target = this.hash;
       	    var $target = $(target);
       	    $('html, body').stop().animate({
-      	        'scrollTop': $target.offset().top
+      	        'scrollTop': $target.offset().top - 100
       	    }, 600, 'swing', function () {
       	    });
       	});
@@ -113,6 +113,14 @@
           
         });
       }
+      
+      $(".swipe-area").scroll(function() {
+          if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+              openNav();    
+          } else {
+              closeNav();
+          }
+      });
       
       $( window ).bind('beforeunload', function()
       {

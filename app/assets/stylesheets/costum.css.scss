@@ -85,15 +85,59 @@ p {
     font-weight: bold;
 }
 #hederi {
-    -webkit-box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 210px -23px rgba(0, 0, 0, 0.45);
     background-color: white;
     height: 95px;
 
 }
+.large-photo {
+  margin-bottom:0px;
+}
+#home-photo {
+    background-image: url("home-photo1.jpg");
+
+    /* Full height */
+    height: 40vw; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .container {
     position: relative;
+}
+.button {
+  font-family: Montserrat;
+  font-size: 20px;
+  text-align:center;
+  margin: 25px;
+  display: inline block;
+  width: 150px;
+  border: 1.5px solid #d3d3d3;
+  background-color:#e5e5e5;
+}
+.spec-button{
+  display: inline block;
+}
+#button-more {
+  color:#444444;
+  
+}
+#button-more:hover {
+  text-decoration:none;
+  color:#606060;
+  font-weight:bold;
+}
+#button-more:focus {
+  text-decoration:none;
+  color:#606060;
+  font-weight:bold;
+  
 }
 .center {
     position: absolute;
@@ -162,7 +206,37 @@ p {
   width: 98.9vw;  
   height: 350px;
 }
+.my-1 {
+  margin-top:20px;
+  margin-bottom:20px;
+  width:70%;
+}
+.my-2 {
+  margin-top:20px;
+  margin-bottom:20px;
+  width:50%;
+}
+.fotoja {
+  border-radius:50%;
+  width:180px;
+  height:180px;
+  margin-top:25px;
+  box-shadow:0px 10px 15px;
+}
 
+#ndarsja {
+  display:none;
+}
+#programeri {
+  background-image: url( "programeri.jpg");
+  width:180px;
+  height:180px;
+}
+#dizajneri {
+  background-image: url("dizajneri.jpg");
+  width:180px;
+  height:180px;
+}
 
 
 
@@ -190,6 +264,9 @@ p {
       width: 100vw;  
       height: 350px;
     }
+    #home-photo {
+      height: 50vw; 
+    }
 }
 @media only screen and (max-width: 768px) {
     
@@ -214,6 +291,13 @@ p {
     #mapa {
       width: 100vw;  
       height: 350px;
+    }
+    
+    #ndarsja {
+      display:block;
+    }
+    #home-photo {
+      height: 55vw; 
     }
     
 }
@@ -242,6 +326,13 @@ p {
       height: 350px;
     }
     
+    #ndarsja {
+      display:block;
+    }
+    #home-photo {
+      height: 60vw; 
+    }
+    
 }
 @media only screen and (max-width: 390px) {
     
@@ -267,5 +358,12 @@ p {
     #mapa {
       width: 100vw;  
       height: 350px;
+    }
+    
+    #ndarsja {
+      display:block;
+    }
+    #home-photo {
+      height: 70vw; 
     }
 }
